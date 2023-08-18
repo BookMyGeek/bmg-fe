@@ -16,7 +16,7 @@ const Home = ({ frontmatter }) => {
   return (
     <Base title={title}>
       {/* Banner */}
-      <section className="section pb-[50px]">
+      <section className="section pb-[50px] pt-[120px]">
         <div className="container">
           <div className="row text-center">
             <div className="mx-auto lg:col-10">
@@ -114,7 +114,7 @@ const Home = ({ frontmatter }) => {
                   }`}
                 >
                   <h2 className="font-bold leading-[40px]">{service?.title}</h2>
-                  <p className="mt-4 mb-2">{service?.content}</p>
+                  <p className="mb-2 mt-4">{service?.content}</p>
                   {service.button.enable && (
                     <Link
                       href={service?.button.link}
@@ -143,7 +143,7 @@ const Home = ({ frontmatter }) => {
           {markdownify(
             workflow.title,
             "h2",
-            "mx-auto max-w-[400px] font-bold leading-[44px]"
+            "mx-auto max-w-[400px] font-bold leading-[44px] mt-3"
           )}
           {markdownify(workflow.description, "p", "mt-3")}
         </div>
